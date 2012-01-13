@@ -8,5 +8,13 @@
 
 <body>
 </body>
+<!--
+	We put the script tag at the bottom for two reasons:
+	1.	When the browser hits a script tag it will delay rendering the page until the java script is executed 
+		so for usability if we put our scripts at the bottom of the page, the page will render faster.
+	2.	If the Java Script is executed in the head, the body won't be rendered yet
+		so we won't be able to manipulate our html.
+	3.	Always put modernizer and selectivizer in the header so it runs first so the HTML can render properly.
+-->	
 <script src = "js/demo.js"></script>
 </html>
